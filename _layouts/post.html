@@ -1,0 +1,153 @@
+---
+layout: null
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>{{ page.meta_title | default: page.title | escape }}</title>
+<meta name="description" content="{{ page.meta_description | default: page.description | escape }}">
+
+<link rel="canonical" href="{{ page.url | absolute_url }}">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+body{
+margin:0;
+font-family:Arial,Helvetica,sans-serif;
+background:#f8fafc;
+color:#0b1e4f;
+}
+
+.article-header{
+background:linear-gradient(135deg,#0b1e4f,#0f3d96);
+color:white;
+padding:80px 20px;
+text-align:center;
+}
+
+.article-header h1{
+max-width:950px;
+margin:20px auto;
+font-size:48px;
+line-height:1.15;
+font-weight:900;
+}
+
+.category{
+display:inline-block;
+background:#f5c518;
+color:#0b1e4f;
+padding:8px 16px;
+border-radius:999px;
+font-weight:900;
+font-size:12px;
+text-transform:uppercase;
+}
+
+.article-meta{
+color:#bfdbfe;
+margin-top:18px;
+}
+
+.featured-image{
+max-width:1000px;
+margin:40px auto 0;
+padding:0 20px;
+}
+
+.featured-image img{
+width:100%;
+border-radius:24px;
+display:block;
+}
+
+.article-content{
+max-width:850px;
+margin:50px auto;
+padding:0 22px;
+font-size:18px;
+line-height:1.8;
+color:#334155;
+}
+
+.article-content h2,
+.article-content h3{
+color:#0b1e4f;
+font-weight:900;
+margin-top:40px;
+}
+
+.article-content a{
+color:#0f3d96;
+text-decoration:underline;
+font-weight:700;
+}
+
+.back-blog{
+text-align:center;
+margin:50px 0;
+}
+
+.back-blog a{
+display:inline-block;
+background:#f5c518;
+color:#0b1e4f;
+padding:14px 28px;
+border-radius:999px;
+font-weight:900;
+text-decoration:none;
+}
+
+footer{
+background:#080f2a;
+color:white;
+text-align:center;
+padding:30px 20px;
+}
+</style>
+</head>
+
+<body>
+
+<header class="article-header">
+
+{% if page.category %}
+<span class="category">{{ page.category }}</span>
+{% endif %}
+
+<h1>{{ page.title }}</h1>
+
+<p class="article-meta">
+{% if page.author %}By {{ page.author }} • {% endif %}
+{{ page.date | date: "%B %d, %Y" }}
+</p>
+
+</header>
+
+{% if page.thumbnail and page.thumbnail != "" %}
+<div class="featured-image">
+<img src="{{ page.thumbnail }}" alt="{{ page.thumbnail_alt | default: page.title | escape }}">
+</div>
+{% endif %}
+
+<main class="article-content">
+{{ content }}
+</main>
+
+<div class="back-blog">
+<a href="/blog.html">← Back to Blog</a>
+</div>
+
+<footer>
+<strong>UP<span style="color:#f5c518;">RANK</span></strong>
+<p>SEO Blog • Guest Posting • Link Building • Authority Growth</p>
+<p>© 2026 UpRank. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
