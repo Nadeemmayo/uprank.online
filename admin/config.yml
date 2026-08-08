@@ -2,16 +2,90 @@ backend:
   name: github
   repo: Nadeemmayo/uprank.online
   branch: main
+  base_url: https://linkliftpro-cms-auth.seoinfo89.workers.dev
+  auth_endpoint: auth
+
+site_url: https://uprank.online
+display_url: https://uprank.online
 
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
 
 collections:
   - name: "blog"
-    label: "Blog Posts"
-    folder: "posts"
+    label: "Blog"
+    label_singular: "Article"
+    folder: "_posts"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+
     fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - label: "Layout"
+        name: "layout"
+        widget: "hidden"
+        default: "post"
+
+      - label: "Article Title"
+        name: "title"
+        widget: "string"
+
+      - label: "Publish Date"
+        name: "date"
+        widget: "datetime"
+
+      - label: "Author"
+        name: "author"
+        widget: "string"
+        default: "UpRank Team"
+
+      - label: "Category"
+        name: "category"
+        widget: "select"
+        options:
+          - "SEO"
+          - "Link Building"
+          - "Guest Posting"
+          - "Niche Edits"
+          - "Authority Building"
+          - "AI Search"
+          - "SEO Audit"
+
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
+        required: false
+
+      - label: "Short Description"
+        name: "description"
+        widget: "text"
+
+      - label: "Meta Title"
+        name: "meta_title"
+        widget: "string"
+        hint: "Keep it around 50 to 60 characters."
+
+      - label: "Meta Description"
+        name: "meta_description"
+        widget: "text"
+        hint: "Keep it around 140 to 160 characters."
+
+      - label: "Focus Keyword"
+        name: "focus_keyword"
+        widget: "string"
+        required: false
+
+      - label: "Featured Image"
+        name: "thumbnail"
+        widget: "image"
+        required: false
+
+      - label: "Featured Image Alt Text"
+        name: "thumbnail_alt"
+        widget: "string"
+        required: false
+
+      - label: "Article Content"
+        name: "body"
+        widget: "markdown"
