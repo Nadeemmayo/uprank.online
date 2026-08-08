@@ -1,0 +1,12 @@
+title: UpRank
+url: https://uprank.online
+baseurl: ""
+
+permalink: /blog/:title/
+
+markdown: kramdown
+
+plugins: []
+
+exclude:
+  - README.md
