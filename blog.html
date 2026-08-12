@@ -1,5 +1,6 @@
 ---
 layout: null
+permalink: /blog.html
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -25,7 +26,6 @@ layout: null
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
-
 html{scroll-behavior:smooth}
 
 body{
@@ -225,7 +225,6 @@ border-top:1px solid rgba(245,197,24,.15)
 @media(max-width:768px){
 .logo{font-size:22px}
 }
-
 </style>
 
 <script type="application/ld+json">
@@ -253,7 +252,6 @@ border-top:1px solid rgba(245,197,24,.15)
 <body>
 
 <nav class="navbar sticky top-0 z-50 p-4">
-
 <div class="max-w-7xl mx-auto flex justify-between items-center flex-wrap gap-4">
 
 <a href="index.html" class="logo">
@@ -276,7 +274,6 @@ UP<span>RANK</span>
 </div>
 </div>
 </nav>
-
 
 <section class="hero-bg py-24 px-6 text-center">
 
@@ -312,7 +309,6 @@ Get Free Consultation
 </div>
 </section>
 
-
 <section style="background:#0d2460" class="py-12 px-6">
 
 <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-5 text-center">
@@ -338,7 +334,6 @@ Get Free Consultation
 </div>
 </section>
 
-
 <section class="blog-section py-20 px-6">
 
 <div class="max-w-7xl mx-auto">
@@ -361,13 +356,9 @@ niche edits, authority building and SEO growth.
 
 </div>
 
-
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-
-<!-- ========================= -->
-<!-- NEW CMS ARTICLES -->
-<!-- ========================= -->
+<!-- CMS ARTICLES -->
 
 {% for post in site.posts %}
 
@@ -377,7 +368,7 @@ niche edits, authority building and SEO growth.
 
 <div class="blog-image">
 <img src="{{ post.thumbnail | relative_url }}"
-     alt="{{ post.thumbnail_alt | default: post.title | escape }}">
+alt="{{ post.thumbnail_alt | default: post.title | escape }}">
 </div>
 
 {% else %}
@@ -387,7 +378,6 @@ niche edits, authority building and SEO growth.
 </div>
 
 {% endif %}
-
 
 <div class="p-7">
 
@@ -412,28 +402,19 @@ Read Article
 </a>
 
 </div>
-
 </article>
 
 {% endfor %}
 
-
-<!-- ========================= -->
 <!-- EXISTING ARTICLES -->
-<!-- ========================= -->
-
 
 <article class="blog-card">
-
 <div class="blog-image">
 <i class="fas fa-robot"></i>
 </div>
 
 <div class="p-7">
-
-<span class="category-pill">
-AI Search
-</span>
+<span class="category-pill">AI Search</span>
 
 <h3 class="text-2xl font-black mt-5 mb-4 leading-tight uppercase">
 How Brands Can Stay Visible In AI Search
@@ -447,22 +428,16 @@ websites remain visible as AI search changes organic results.
 <a href="blog-post-1.html" class="read-link">
 Read Insight
 </a>
-
 </div>
 </article>
 
-
 <article class="blog-card">
-
 <div class="blog-image">
 <i class="fas fa-link"></i>
 </div>
 
 <div class="p-7">
-
-<span class="category-pill">
-Link Building
-</span>
+<span class="category-pill">Link Building</span>
 
 <h3 class="text-2xl font-black mt-5 mb-4 leading-tight uppercase">
 Quality Backlinks That Still Move Rankings
@@ -476,22 +451,16 @@ edits that support real authority growth.
 <a href="blog-post-2.html" class="read-link">
 Read Guide
 </a>
-
 </div>
 </article>
 
-
 <article class="blog-card">
-
 <div class="blog-image">
 <i class="fas fa-crown"></i>
 </div>
 
 <div class="p-7">
-
-<span class="category-pill">
-Authority
-</span>
+<span class="category-pill">Authority</span>
 
 <h3 class="text-2xl font-black mt-5 mb-4 leading-tight uppercase">
 Why Authority Signals Matter More Than Volume
@@ -505,22 +474,16 @@ anchors matter more than building hundreds of weak links.
 <a href="blog-post-3.html" class="read-link">
 Read Guide
 </a>
-
 </div>
 </article>
 
-
 <article class="blog-card">
-
 <div class="blog-image">
 <i class="fas fa-newspaper"></i>
 </div>
 
 <div class="p-7">
-
-<span class="category-pill">
-Guest Posting
-</span>
+<span class="category-pill">Guest Posting</span>
 
 <h3 class="text-2xl font-black mt-5 mb-4 leading-tight uppercase">
 What Makes A Guest Post Site Worth Using?
@@ -534,22 +497,16 @@ context to choose stronger guest post opportunities.
 <a href="blog-post-1.html" class="read-link">
 Read Guide
 </a>
-
 </div>
 </article>
 
-
 <article class="blog-card">
-
 <div class="blog-image">
 <i class="fas fa-magnifying-glass-chart"></i>
 </div>
 
 <div class="p-7">
-
-<span class="category-pill">
-SEO Audit
-</span>
+<span class="category-pill">SEO Audit</span>
 
 <h3 class="text-2xl font-black mt-5 mb-4 leading-tight uppercase">
 The Backlink Checks Every Website Needs
@@ -563,22 +520,16 @@ signals can hold back organic growth.
 <a href="blog-post-2.html" class="read-link">
 Read Guide
 </a>
-
 </div>
 </article>
 
-
 <article class="blog-card">
-
 <div class="blog-image">
 <i class="fas fa-bullseye"></i>
 </div>
 
 <div class="p-7">
-
-<span class="category-pill">
-Niche Edits
-</span>
+<span class="category-pill">Niche Edits</span>
 
 <h3 class="text-2xl font-black mt-5 mb-4 leading-tight uppercase">
 Niche Edits Or Guest Posts: Which Is Better?
@@ -592,15 +543,12 @@ content quality and campaign safety.
 <a href="blog-post-3.html" class="read-link">
 Read Comparison
 </a>
-
 </div>
 </article>
-
 
 </div>
 </div>
 </section>
-
 
 <section class="py-20 px-6">
 
@@ -635,7 +583,6 @@ Read FAQ
 </div>
 </div>
 </section>
-
 
 <footer class="footer py-8 px-6 text-center">
 
