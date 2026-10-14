@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 149 56" role="img" aria-label="UpRank">
+<g transform="translate(0 4)"><svg viewBox="0 0 48 48" width="48" height="48"><defs><linearGradient id="lgL" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#F43F5E"/><stop offset="1" stop-color="#BE123C"/></linearGradient></defs><circle cx="24" cy="24" r="24" fill="url(#lgL)"/><path d="m15 31 9-8 9 8" fill="none" stroke="#fff" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/><path d="m15 22 9-8 9 8" fill="none" stroke="#fff" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" opacity=".6"/></svg></g>
+<text x="62" y="29" font-family="Poppins, Segoe UI, Arial, sans-serif" font-size="22" font-weight="700" fill="#1A1023" letter-spacing="-.4">Up<tspan fill="#E11D48">Rank</tspan></text>
+<text x="63" y="47" font-family="Poppins, Segoe UI, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#5A6081" letter-spacing="2.4">RANKINGS THAT PAY OFF</text>
+</svg>
